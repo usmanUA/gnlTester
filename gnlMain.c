@@ -12,7 +12,9 @@ int	main(int argc, char **argv)
 	int fd1;
 	char	*line;
 	char	*line1;
-
+	
+	fd = 0;
+	fd1 = 0;
 	if (argc == 2)
 	{
 		fd = open(argv[1], O_RDONLY);
@@ -45,8 +47,8 @@ int	main(int argc, char **argv)
 			line = get_next_line(fd);
 			line1 = get_next_line(fd1);
 		}
-	}
 	close(fd);
 	close(fd1);
+	}
 	return (0);
 }
