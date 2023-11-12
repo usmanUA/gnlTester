@@ -34,7 +34,7 @@ int	main(int argc, char **argv)
 
 
 	printf("\n\n\n\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*BONUS PART-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n\n");
-	if (argc == 2)
+	if (argc == 3)
 	{
 		fd = open(argv[1], O_RDONLY);
 		fd1 = open(argv[2], O_RDONLY);
