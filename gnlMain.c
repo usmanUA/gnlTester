@@ -20,13 +20,13 @@ int	main(int argc, char **argv)
 		while (line)
 		{
 			printf("%s", line);
-			line = get_next_line(fd));
+			line = get_next_line(fd);
 		}
 
 		close(fd);
 		printf("\n\n-*-*-*-*-TESTING INVALID FILE DESCRIPTOR-*-*-*-*\n");
-		printf("%s for Invalid fd.\n\n\n\n", get_next_line(138558155813758753457893457845));
-		printf("%s for Invalid fd.\n\n\n\n", get_next_line(-10045908349854934589354));
+		printf("%s for Invalid fd.\n\n\n\n", get_next_line(5345789));
+		printf("%s for Invalid fd.\n\n\n\n", get_next_line(-1589354));
 	}
 
 
@@ -42,8 +42,9 @@ int	main(int argc, char **argv)
 		{
 			printf("first file:- %s", line);
 			printf("second file:- %s", line1);
-			line = get_next_line(fd));
-			line1 = get_next_line(fd1));
+			line = get_next_line(fd);
+			line1 = get_next_line(fd1);
+		}
 	}
 	close(fd);
 	close(fd1);
