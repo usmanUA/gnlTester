@@ -22,8 +22,14 @@ int	main(int argc, char **argv)
 			printf("%s", line);
 			line = get_next_line(fd));
 		}
+
 		close(fd);
+		printf("\n\n-*-*-*-*-TESTING INVALID FILE DESCRIPTOR-*-*-*-*\n");
+		printf("%s for Invalid fd.\n\n\n\n", get_next_line(138558155813758753457893457845));
+		printf("%s for Invalid fd.\n\n\n\n", get_next_line(-10045908349854934589354));
 	}
+
+
 
 	printf("\n\n\n\n-*-*-*-*-*-*-*-*-*-*-*-*-*-*BONUS PART-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n\n");
 	if (argc == 2)
@@ -32,7 +38,7 @@ int	main(int argc, char **argv)
 		fd1 = open(argv[2], O_RDONLY);
 		line = get_next_line(fd);
 		line1 = get_next_line(fd1);
-		while (line || line)
+		while (line || line1)
 		{
 			printf("first file:- %s", line);
 			printf("second file:- %s", line1);
