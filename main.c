@@ -35,17 +35,17 @@ int main()
 	printf("printf prints %d characters for UINT_MAX\n", p_char);
 	printf("ft_printf prints %d characters for UINT_MAX\n", fp_char);
 
+	printf("\n");
+	p_char = printf(" % \n");
+	fp_char = ft_printf(" % \n");
+	printf("printf prints %d characters for %\n", p_char);
+	printf("ft_printf prints %d characters for %\n", fp_char);
 
-	// p_char = printf(" %d \n", );
-	// fp_char = ft_printf(" %d \n", -1234);
-	// printf("printf prints %d characters for -1234\n", p_char);
-	// printf("ft_printf prints %d characters for -1234\n", fp_char);
-
-
-	// p_char = printf(" %d \n", -1234);
-	// fp_char = ft_printf(" %d \n", -1234);
-	// printf("printf prints %d characters for -1234\n", p_char);
-	// printf("ft_printf prints %d characters for -1234\n", fp_char);
+	printf("\n");
+	p_char = printf(" %x \n", 1234);
+	fp_char = ft_printf(" %x \n", 1234);
+	printf("printf prints %d characters for x = 1234\n", p_char);
+	printf("ft_printf prints %d characters for x = 1234\n", fp_char);
 
 
 	// p_char = printf(" %d \n", -1234);
