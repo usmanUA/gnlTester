@@ -21,6 +21,7 @@ int	main(int argc, char **argv)
 		line = get_next_line(fd);
 		while (line)
 		{
+			system("leaks -q get_next_line | grep -w total >> leaks.txt");
 			printf("%s", line);
 			line = get_next_line(fd);
 		}
@@ -42,6 +43,7 @@ int	main(int argc, char **argv)
 		line1 = get_next_line(fd1);
 		while (line || line1)
 		{
+			system("leaks -q get_next_line | grep -w total >> leaks.txt");
 			printf("first file:- %s", line);
 			printf("second file:- %s", line1);
 			line = get_next_line(fd);
